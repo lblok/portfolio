@@ -1,29 +1,26 @@
-body {
-    margin-left:5%;
-    margin-right:5%
+html {
+    overflow: scroll;
 }
 
-body.intro {
-    font-size: 5em;
-    font-family: sans-serif;    
-}
-body.intro li {
-    margin-left: 1em;
+body {
+    margin-left:5%;
+    margin-right:5%;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 h1,h2,h3,h4 {
-    font-family:sans-serif;
-    width:95%;
-    margin-left:1em;
-    margin-right:1em
-}
-
-div {
-    font-family:sans-serif;
     width:95%;
     margin-left:1em;
     margin-right:1em;
-    font-size:1em
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+div {
+    font-family: 'Noto Sans JP', sans-serif;
+    /* width:95%; */
+    margin-left:1em;
+    margin-right:1em;
+    font-size:16px;
 }
 
 #header {
@@ -32,25 +29,205 @@ div {
     text-align:center
 }
 
-.vis-critique {
-    background:#E6E6E6;
-    padding:5px;
-    margin:10px;
-    border-radius:15px
+
+
+/* Lucy styles */
+
+ul {
+    list-style-type: none;
 }
 
-.project {
-    background:#ADD6FF;
-    padding:10px;
-    margin:10px;
-    border-radius:15px
+ul.nomargin {
+    margin: 0;
+    padding: 0;
 }
 
-blockquote {
-    background:#f9f9f9;
-    border-left:10px solid #ccc;
-    margin:1.5em 10px;
-    padding:.5em 10px;
-    quotes:"\201C""\201D""\2018""\2019";
-    text-align:justify
+ul.nomargin li {
+    margin: .25em .5em .25em .5em;
+}
+
+ul.smallfont {
+    font-size: 11px;
+}
+
+
+a {
+    text-decoration: none;
+    color: rgb(80, 46, 182)
+}
+
+a:hover {
+    color: rgb(129, 84, 189)
+}
+
+div.menu {
+    text-transform: uppercase;
+    padding-left: 1rem;
+    font-size: 28px;
+    width: 80%;
+    line-height: 1.5;
+    position: fixed;
+    top: 200px;
+    left: 20px;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.7)
+}
+
+div.mepic {
+    position: absolute;
+    left: 640px;
+    top: 120px;
+    z-index: 13;
+}
+
+div.randombar {
+    padding-right: 0.5rem;
+    font-size: 14px;
+    width: 100px;
+    line-height: 1.2;
+    position: fixed;
+    top: 100px;
+    left: 600px;
+    z-index: 11;
+    background-color: rgba(179, 177, 177, 0.7)
+
+}
+
+div.randombar ul {
+    padding-left: 0;
+}
+
+div.randombar li {
+    margin-bottom: 3px;
+}
+
+div.navbar {
+    font-size: 8px;
+}
+
+div.blocktext {
+    font-family: 'Lora', sans-serif;    
+    font-size: 14px;
+    width: 70%;
+    max-width: 540px;
+    margin-right: 60px;
+    padding: 10px;
+    line-height: 1.5;
+    position: absolute;
+    top: 100px;
+    left: 60px;
+    z-index: 9;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+div.worklist {
+    font-family: 'Lora', sans-serif;    
+    font-size: 12px;
+    padding-top: .25em;
+}
+
+div.sideright {
+    left: 580px;
+    top: 300px;
+    width: 220px;    
+    z-index: 12;
+}
+
+div.notwork {
+    font-family: 'Noto Sans JP', sans-serif;
+    left: 590px;
+    top: 510px;
+    z-index: 12;
+    margin: 0;
+}
+
+div.notwork a {
+    background-color: rgb(158, 158, 158);
+    padding: .25em 4.5em .25em 4.5em;
+}
+
+div.notwork a:hover {
+    background-color: rgb(190, 190, 190)
+}
+
+.mapbg {
+    position: absolute;
+    width: 100%
+}
+
+.mapimg {
+    max-width: 620px;
+    min-width:400px;
+    width: 70%;
+}
+
+.remark-slide-scaler {
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+
+.remark-container {
+    background-color: white !important;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+
+/* Navbar CSS */
+
+
+.navbar { 
+    display: block; 
+    height: 40px;
+    padding: 0rem;
+}
+
+.navbar > .container-nav {
+  width: 100%; 
+  max-width: 950px;
+  position: relative;
+  margin: 0 auto;
+  display: relative;
+}
+
+.navbar-list {
+  list-style: none;
+  margin-bottom: 0; 
+  padding-left: 0rem !important;
+}
+
+.navbar-item {
+  position: relative;
+  float: left;
+  margin: 0 20px 0 20px; 
+}
+
+.navbar-link {
+  text-transform: uppercase;
+  font-size: 18px;
+  text-decoration: none;
+  line-height: 44px;
+  color: #302f2f ;
+  transition: color 0.4s ease 0s;
+}
+
+.navbar-link:hover {
+  color: rgb(80, 46, 182) ;
+  transition: color 0.4s ease 0s;
+  background-color: transparent;  
+}
+
+.navbar-link.active {
+  color: rgb(129, 84, 189);
+}
+
+.navbar-link.active::after {
+    content: "" ;
+}
+
+#lblogo {
+    width: 100px;
+    margin: 8px 5px 0 5px;
 }
